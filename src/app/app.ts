@@ -4,7 +4,6 @@ import { Hero } from './components/hero/hero';
 import { CoupleIntro } from './components/couple-intro/couple-intro';
 import { VedicPrayer } from './components/vedic-prayer/vedic-prayer';
 import { WeddingDetails } from './components/wedding-details/wedding-details';
-import { Countdown } from './components/countdown/countdown';
 import { Footer } from './components/footer/footer';
 
 @Component({
@@ -15,7 +14,6 @@ import { Footer } from './components/footer/footer';
     CoupleIntro,
     VedicPrayer,
     WeddingDetails,
-    Countdown,
     Footer
   ],
   templateUrl: './app.html',
