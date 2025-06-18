@@ -21,4 +21,11 @@ export class Hero implements OnInit {
       this.guestName = params['guest'] ?? 'Guest';
     });
   }
+
+  scrollToNextSection() {
+    const element = document.getElementById('couple');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
