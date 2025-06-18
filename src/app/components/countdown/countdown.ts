@@ -9,7 +9,7 @@ import { interval, Subscription } from 'rxjs';
   styleUrl: './countdown.css'
 })
 export class Countdown implements OnInit, OnDestroy {
-  weddingDate = new Date('2024-12-31T10:00:00'); // Update with actual wedding date
+  weddingDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // One week from now
   timeLeft = {
     days: 0,
     hours: 0,
