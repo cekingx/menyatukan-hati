@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Env } from '../../../environment/env';
 
 @Component({
   selector: 'app-couple-intro',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './couple-intro.css'
 })
 export class CoupleIntro {
-
+  groomFullName = Env.groomFullName;
+  brideFullName = Env.brideFullName;
 }
