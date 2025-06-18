@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Env } from '../../../environment/env';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class Footer {
-
+  groomShortName = Env.groomShortName;
+  brideShortName = Env.brideShortName;
 }
