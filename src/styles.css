@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* Custom wedding invitation styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+/* Custom serif font for headings */
+.font-serif {
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Smooth transitions for hover effects */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #be185d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9d174d;
+}
