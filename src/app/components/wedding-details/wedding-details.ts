@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { interval, Subscription } from 'rxjs';
+import { Env } from '../../../environment/env';
 
 @Component({
   selector: 'app-wedding-details',
@@ -9,6 +10,8 @@ import { interval, Subscription } from 'rxjs';
   styleUrl: './wedding-details.css'
 })
 export class WeddingDetails implements OnInit, OnDestroy {
+  groomFamName = Env.groomFamName;
+  brideFamName = Env.brideFamName;
   weddingDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // One week from now
   timeLeft = {
     days: 0,

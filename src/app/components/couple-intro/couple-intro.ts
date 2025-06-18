@@ -9,5 +9,9 @@ import { Env } from '../../../environment/env';
 })
 export class CoupleIntro {
   groomFullName = Env.groomFullName;
+  groomFatherName = Env.groomFatherName;
+  groomMotherName = Env.groomMotherName;
   brideFullName = Env.brideFullName;
+  brideFatherName = Env.brideFatherName;
+  brideMotherName = Env.brideMotherName;
 }
