@@ -20,6 +20,7 @@ Transform "menyatukan-hati" into a modern, responsive online wedding invitation 
 2. Section to introduce the groom and the bride
 3. Section that contain prayer in veda
 4. Section that contain date, time, venue, and countdown
+5. Section for photos
 6. Footer that say 'Matur Suksma' and 'made with love by cekingx'
 
 ### Phase 1: Core Structure
