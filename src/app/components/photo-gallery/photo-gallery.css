@@ -1,0 +1,93 @@
+/* Photo Gallery Component Styles */
+
+.gallery-item {
+  aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Aspect ratio utilities for consistent image sizing */
+.aspect-w-4 {
+  position: relative;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+}
+
+.aspect-w-4 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Lightbox animations */
+.lightbox-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.lightbox-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lightbox-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.lightbox-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Custom scrollbar for gallery */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fb7185;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f43f5e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-item {
+    aspect-ratio: 1/1;
+  }
+  
+  .lightbox-modal .max-w-4xl {
+    max-width: 95vw;
+  }
+}
+
+/* Focus states for accessibility */
+.gallery-item:focus {
+  outline: 2px solid #fb7185;
+  outline-offset: 2px;
+}
+
+button:focus {
+  outline: 2px solid #fb7185;
+  outline-offset: 2px;
+}

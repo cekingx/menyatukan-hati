@@ -1,6 +1,19 @@
-# MenyatukanHati
+# Menyatukan Hati - Wedding Invitation Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+A beautiful, responsive wedding invitation website built with Angular 20 and TailwindCSS v4. Features traditional Balinese elements with modern web design.
+
+## Features
+
+- **Responsive Design**: Optimized for mobile, tablet, and desktop viewing
+- **Interactive Photo Gallery**: Full-screen lightbox with keyboard navigation
+- **Live Countdown Timer**: Real-time countdown to the wedding ceremony
+- **Personalized Greetings**: Dynamic guest names from URL parameters
+- **Traditional Elements**: Om Swastiastu greeting and Vedic prayers
+- **Modern Architecture**: Angular 20 standalone components with TailwindCSS v4
+
+## Project Architecture
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2 with standalone components architecture.
 
 ## Development server
 
@@ -53,6 +66,26 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Deployment
+
+The application is optimized for static hosting and can be deployed to:
+- Netlify
+- Vercel  
+- GitHub Pages
+- Firebase Hosting
+- Any static web server
+
+Build artifacts are generated in the `dist/menyatukan-hati/` directory.
+
+## Environment Configuration
+
+Configure the following environment variables in `src/environments/environment.ts`:
+- `groomShortName`: Short name for the groom
+- `brideShortName`: Short name for the bride
+- `groomFullName`: Full name for the groom
+- `brideFullName`: Full name for the bride
+- Family member names (fathers and mothers)
 
 ## Additional Resources
 
