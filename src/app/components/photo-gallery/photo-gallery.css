@@ -1,9 +1,5 @@
 /* Photo Gallery Component Styles */
 
-.gallery-item {
-  aspect-ratio: 4/3;
-}
-
 .gallery-item img {
   transition: transform 0.3s ease-in-out;
 }
@@ -12,21 +8,6 @@
   transform: scale(1.1);
 }
 
-/* Aspect ratio utilities for consistent image sizing */
-.aspect-w-4 {
-  position: relative;
-  padding-bottom: 75%; /* 4:3 aspect ratio */
-}
-
-.aspect-w-4 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 
 /* Lightbox animations */
 .lightbox-enter {
@@ -72,10 +53,6 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .gallery-item {
-    aspect-ratio: 1/1;
-  }
-  
   .lightbox-modal .max-w-4xl {
     max-width: 95vw;
   }
