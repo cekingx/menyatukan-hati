@@ -1,0 +1,29 @@
+<section class="py-20 bg-gradient-to-b from-primary-50 to-white" id="metatah">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-serif text-primary-800 mb-4">
+        Metatah Ceremony
+      </h2>
+      <div class="w-24 h-0.5 bg-primary-400 mx-auto"></div>
+    </div>
+    
+    <div class="text-center mb-16 max-w-4xl mx-auto">
+      <p class="text-lg md:text-xl text-primary-700 leading-relaxed">
+        Dengan penuh sukacita, kami mengundang kehadiran Bapak/Ibu/Saudara/i untuk menyaksikan upacara Metatah (potong gigi) putra-putri kami sebagai bagian dari tradisi Hindu Bali yang sakral.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+      @for (participant of participants; track participant.name) {
+        <div class="text-center">
+          <div class="w-48 h-48 bg-primary-100 rounded-full mx-auto mb-6 overflow-hidden">
+            <img [src]="participant.photo" [alt]="participant.name" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl md:text-3xl font-serif text-primary-900 mb-3">
+            {{participant.name}}
+          </h3>
+        </div>
+      }
+    </div>
+  </div>
+</section>

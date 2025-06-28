@@ -82,8 +82,8 @@ Components follow standalone pattern:
 
 - Estimate token usage before call agent to make changes
 - The goal is to avoid 25K token usage when make big changes
-- Create execution plan in spec/EXECUTION.local.md, split into separate phase
-- Phase in EXECUTION.local.md will be executed one-by-one
+- Create execution plan in spec/EXEC.local.md, split into separate phase
+- Phase in EXEC.local.md will be executed one-by-one
 
 ## PRD
 

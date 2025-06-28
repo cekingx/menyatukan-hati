@@ -12,7 +12,7 @@ import { Env } from '../../../environment/env';
 export class WeddingDetails implements OnInit, OnDestroy {
   groomFamName = Env.groomFamName;
   brideFamName = Env.brideFamName;
-  weddingDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // One week from now
+  weddingDate = new Date('2025-08-15 15:00:00');
   timeLeft = {
     days: 0,
     hours: 0,
