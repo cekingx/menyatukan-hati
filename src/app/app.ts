@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Hero } from './components/hero/hero';
 import { CoupleIntro } from './components/couple-intro/couple-intro';
+import { Metatah } from './components/metatah/metatah';
 import { VedicPrayer } from './components/vedic-prayer/vedic-prayer';
 import { WeddingDetails } from './components/wedding-details/wedding-details';
 import { PhotoGallery } from './components/photo-gallery/photo-gallery';
@@ -14,6 +15,7 @@ import { ThemeService } from './services/theme.service';
     RouterOutlet,
     Hero,
     CoupleIntro,
+    Metatah,
     VedicPrayer,
     WeddingDetails,
     PhotoGallery,
