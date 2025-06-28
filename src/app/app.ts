@@ -6,7 +6,6 @@ import { VedicPrayer } from './components/vedic-prayer/vedic-prayer';
 import { WeddingDetails } from './components/wedding-details/wedding-details';
 import { PhotoGallery } from './components/photo-gallery/photo-gallery';
 import { Footer } from './components/footer/footer';
-import { ThemeSwitcher } from './components/theme-switcher/theme-switcher';
 import { ThemeService } from './services/theme.service';
 
 @Component({
@@ -18,8 +17,7 @@ import { ThemeService } from './services/theme.service';
     VedicPrayer,
     WeddingDetails,
     PhotoGallery,
-    Footer,
-    ThemeSwitcher
+    Footer
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
