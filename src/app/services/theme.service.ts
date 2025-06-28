@@ -6,7 +6,7 @@ import { ThemeEnum } from '../enum/theme.enum';
 })
 export class ThemeService {
   constructor() {
-    this.applyTheme(ThemeEnum.SAGE);
+    this.applyTheme(ThemeEnum.DARK_SAGE);
   }
 
   private applyTheme(theme: ThemeEnum): void {
@@ -19,7 +19,8 @@ export class ThemeService {
       ThemeEnum.BLUE,
       ThemeEnum.SAGE,
       ThemeEnum.NAVY,
-      ThemeEnum.WARM
+      ThemeEnum.WARM,
+      ThemeEnum.DARK_SAGE
     );
 
     if (theme != ThemeEnum.ROSE) {

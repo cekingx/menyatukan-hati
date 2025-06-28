@@ -3,5 +3,6 @@ export enum ThemeEnum {
   BLUE = 'theme-blue',
   SAGE = 'theme-sage',
   NAVY = 'theme-navy',
-  WARM = 'theme-warm'
+  WARM = 'theme-warm',
+  DARK_SAGE = 'theme-dark-sage'
 }
