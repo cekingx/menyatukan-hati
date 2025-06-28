@@ -83,7 +83,7 @@
       </button>
 
       <!-- Main Image -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-2xl">
+      <div class="bg-modal rounded-lg overflow-hidden shadow-2xl">
         <img
           *ngIf="selectedImage"
           [src]="selectedImage.src"
@@ -92,7 +92,7 @@
         />
         
         <!-- Image Caption -->
-        <div *ngIf="selectedImage?.caption" class="p-4 bg-white">
+        <div *ngIf="selectedImage?.caption" class="p-4 bg-modal">
           <p class="text-center text-primary-800 font-medium">{{ selectedImage?.caption }}</p>
         </div>
       </div>
