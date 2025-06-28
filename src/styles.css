@@ -148,10 +148,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-700);
+  background: var(--color-primary-700);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-800);
+  background: var(--color-primary-800);
 }
