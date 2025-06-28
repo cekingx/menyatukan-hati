@@ -39,6 +39,11 @@
   --color-accent-800: #9d174d;
   --color-accent-900: #831843;
   --color-accent-950: #500724;
+
+  /* Semantic background colors - Default light theme */
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-modal: #ffffff;
 }
 
 /* Theme-specific overrides */
@@ -78,6 +83,10 @@
   --color-accent-800: #1e40af;
   --color-accent-900: #1e3a8a;
   --color-accent-950: #172554;
+
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-modal: #ffffff;
 }
 
 
@@ -117,6 +126,10 @@
   --color-accent-800: #854d0e;
   --color-accent-900: #713f12;
   --color-accent-950: #422006;
+
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-modal: #ffffff;
 
   background-color: #111827;
   color: #f9fafb;
@@ -171,6 +184,10 @@
   --color-accent-900: #713f12;
   --color-accent-950: #422006;
 
+  --color-surface: #172554;
+  --color-card: #1e40af;
+  --color-modal: #1d4ed8;
+
   background-color: #172554;
   color: #eff6ff;
 }
@@ -223,6 +240,10 @@
   --color-accent-800: #f5794f;
   --color-accent-900: #e85d3a;
   --color-accent-950: #c7452a;
+
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-modal: #ffffff;
 }
 
 .theme-warm ::-webkit-scrollbar-track {
@@ -235,6 +256,76 @@
 
 .theme-warm ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary-800);
+}
+
+.theme-dark-sage {
+  --color-primary-50: #022c22;
+  --color-primary-100: #064e3b;
+  --color-primary-200: #065f46;
+  --color-primary-300: #047857;
+  --color-primary-400: #059669;
+  --color-primary-500: #10b981;
+  --color-primary-600: #34d399;
+  --color-primary-700: #6ee7b7;
+  --color-primary-800: #a7f3d0;
+  --color-primary-900: #d1fae5;
+  --color-primary-950: #ecfdf5;
+
+  --color-secondary-50: #022c22;
+  --color-secondary-100: #064e3b;
+  --color-secondary-200: #065f46;
+  --color-secondary-300: #047857;
+  --color-secondary-400: #059669;
+  --color-secondary-500: #10b981;
+  --color-secondary-600: #34d399;
+  --color-secondary-700: #6ee7b7;
+  --color-secondary-800: #a7f3d0;
+  --color-secondary-900: #d1fae5;
+  --color-secondary-950: #ecfdf5;
+
+  --color-accent-50: #fefce8;
+  --color-accent-100: #fef9c3;
+  --color-accent-200: #fef08a;
+  --color-accent-300: #fde047;
+  --color-accent-400: #facc15;
+  --color-accent-500: #eab308;
+  --color-accent-600: #ca8a04;
+  --color-accent-700: #a16207;
+  --color-accent-800: #854d0e;
+  --color-accent-900: #713f12;
+  --color-accent-950: #422006;
+
+  --color-surface: #111827;
+  --color-card: #1f2937;
+  --color-modal: #374151;
+
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.theme-dark-sage ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.theme-dark-sage ::-webkit-scrollbar-thumb {
+  background: var(--color-primary-600);
+}
+
+.theme-dark-sage ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-700);
+}
+
+/* Semantic background utility classes */
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-card {
+  background-color: var(--color-card);
+}
+
+.bg-modal {
+  background-color: var(--color-modal);
 }
 
 /* Custom wedding invitation styles */
