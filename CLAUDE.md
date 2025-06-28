@@ -77,3 +77,15 @@ Components follow standalone pattern:
 - Global styles in `src/styles.css` with `@import "tailwindcss"`
 - TailwindCSS v4 configured via PostCSS
 - Component styles use `.css` files (note: `styleUrl` not `styleUrls`)
+
+## Token Estimation
+
+- Estimate token usage before call agent to make changes
+- The goal is to avoid 25K token usage when make big changes
+- Create execution plan in spec/EXECUTION.local.md, split into separate phase
+- Phase in EXECUTION.local.md will be executed one-by-one
+
+## PRD
+
+- Reflect from spec/PRD.md before make any changes
+- Give insight to me if there is any changes that does not align with the PRD

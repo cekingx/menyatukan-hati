@@ -1,9 +1,9 @@
-<section class="py-16 bg-gradient-to-b from-rose-50 to-pink-50" id="gallery">
+<section class="py-16 bg-gradient-to-b from-primary-50 to-primary-50" id="gallery">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-rose-800 mb-4">Our Gallery</h2>
-      <div class="w-24 h-1 bg-rose-400 mx-auto mb-6"></div>
-      <p class="text-lg text-rose-600 max-w-2xl mx-auto">
+      <h2 class="text-4xl font-bold text-primary-800 mb-4">Our Gallery</h2>
+      <div class="w-24 h-1 bg-primary-400 mx-auto mb-6"></div>
+      <p class="text-lg text-primary-600 max-w-2xl mx-auto">
         Precious moments from our journey together
       </p>
     </div>
@@ -15,7 +15,7 @@
         class="gallery-item relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
         (click)="openLightbox(image)"
       >
-        <div class="aspect-square bg-rose-100">
+        <div class="aspect-square bg-primary-100">
           <img
             [src]="image.src"
             [alt]="image.alt"
@@ -52,7 +52,7 @@
     <div class="relative max-w-4xl max-h-full mx-4" (click)="$event.stopPropagation()">
       <!-- Close Button -->
       <button
-        class="absolute top-4 right-4 z-10 text-white hover:text-rose-300 transition-colors duration-200"
+        class="absolute top-4 right-4 z-10 text-white hover:text-primary-300 transition-colors duration-200"
         (click)="closeLightbox()"
         aria-label="Close gallery"
       >
@@ -63,7 +63,7 @@
 
       <!-- Navigation Buttons -->
       <button
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-rose-300 transition-colors duration-200"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-primary-300 transition-colors duration-200"
         (click)="previousImage()"
         aria-label="Previous image"
       >
@@ -73,7 +73,7 @@
       </button>
 
       <button
-        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-rose-300 transition-colors duration-200"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-primary-300 transition-colors duration-200"
         (click)="nextImage()"
         aria-label="Next image"
       >
@@ -93,7 +93,7 @@
         
         <!-- Image Caption -->
         <div *ngIf="selectedImage?.caption" class="p-4 bg-white">
-          <p class="text-center text-rose-800 font-medium">{{ selectedImage?.caption }}</p>
+          <p class="text-center text-primary-800 font-medium">{{ selectedImage?.caption }}</p>
         </div>
       </div>
     </div>

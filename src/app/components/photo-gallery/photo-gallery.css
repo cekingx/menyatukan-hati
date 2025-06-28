@@ -43,12 +43,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fb7185;
+  background: var(--primary-400);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f43f5e;
+  background: var(--primary-500);
 }
 
 /* Responsive adjustments */
@@ -60,11 +60,11 @@
 
 /* Focus states for accessibility */
 .gallery-item:focus {
-  outline: 2px solid #fb7185;
+  outline: 2px solid var(--primary-400);
   outline-offset: 2px;
 }
 
 button:focus {
-  outline: 2px solid #fb7185;
+  outline: 2px solid var(--primary-400);
   outline-offset: 2px;
 }

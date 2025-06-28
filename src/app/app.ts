@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Hero } from './components/hero/hero';
 import { CoupleIntro } from './components/couple-intro/couple-intro';
@@ -6,6 +6,7 @@ import { VedicPrayer } from './components/vedic-prayer/vedic-prayer';
 import { WeddingDetails } from './components/wedding-details/wedding-details';
 import { PhotoGallery } from './components/photo-gallery/photo-gallery';
 import { Footer } from './components/footer/footer';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -23,4 +24,9 @@ import { Footer } from './components/footer/footer';
 })
 export class App {
   protected title = 'menyatukan-hati';
+  private themeService = inject(ThemeService);
+
+  constructor() {
+    // Theme is already initialized in ThemeService constructor
+  }
 }

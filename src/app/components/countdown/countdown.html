@@ -1,52 +1,52 @@
-<section class="py-20 bg-gradient-to-b from-rose-50 to-rose-100" id="countdown">
+<section class="py-20 bg-gradient-to-b from-primary-50 to-primary-100" id="countdown">
   <div class="max-w-4xl mx-auto px-4">
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-serif text-rose-800 mb-4">
+      <h2 class="text-4xl md:text-5xl font-serif text-primary-800 mb-4">
         Save the Date
       </h2>
-      <div class="w-24 h-0.5 bg-rose-400 mx-auto mb-6"></div>
-      <p class="text-lg text-rose-600">
+      <div class="w-24 h-0.5 bg-primary-400 mx-auto mb-6"></div>
+      <p class="text-lg text-primary-600">
         We're getting married in
       </p>
     </div>
     
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
       <!-- Days -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-rose-100">
-        <div class="text-4xl md:text-5xl font-bold text-rose-800 mb-2">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-primary-100">
+        <div class="text-4xl md:text-5xl font-bold text-primary-800 mb-2">
           {{ timeLeft.days.toString().padStart(2, '0') }}
         </div>
-        <div class="text-rose-600 font-medium uppercase tracking-wide text-sm">
+        <div class="text-primary-600 font-medium uppercase tracking-wide text-sm">
           Days
         </div>
       </div>
       
       <!-- Hours -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-rose-100">
-        <div class="text-4xl md:text-5xl font-bold text-rose-800 mb-2">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-primary-100">
+        <div class="text-4xl md:text-5xl font-bold text-primary-800 mb-2">
           {{ timeLeft.hours.toString().padStart(2, '0') }}
         </div>
-        <div class="text-rose-600 font-medium uppercase tracking-wide text-sm">
+        <div class="text-primary-600 font-medium uppercase tracking-wide text-sm">
           Hours
         </div>
       </div>
       
       <!-- Minutes -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-rose-100">
-        <div class="text-4xl md:text-5xl font-bold text-rose-800 mb-2">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-primary-100">
+        <div class="text-4xl md:text-5xl font-bold text-primary-800 mb-2">
           {{ timeLeft.minutes.toString().padStart(2, '0') }}
         </div>
-        <div class="text-rose-600 font-medium uppercase tracking-wide text-sm">
+        <div class="text-primary-600 font-medium uppercase tracking-wide text-sm">
           Minutes
         </div>
       </div>
       
       <!-- Seconds -->
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-rose-100">
-        <div class="text-4xl md:text-5xl font-bold text-rose-800 mb-2">
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center border border-primary-100">
+        <div class="text-4xl md:text-5xl font-bold text-primary-800 mb-2">
           {{ timeLeft.seconds.toString().padStart(2, '0') }}
         </div>
-        <div class="text-rose-600 font-medium uppercase tracking-wide text-sm">
+        <div class="text-primary-600 font-medium uppercase tracking-wide text-sm">
           Seconds
         </div>
       </div>
@@ -54,13 +54,13 @@
     
     <!-- Wedding Date -->
     <div class="text-center mt-12">
-      <div class="bg-white rounded-lg shadow-lg p-8 border border-rose-100 max-w-md mx-auto">
-        <div class="text-rose-500 text-3xl mb-4">💍</div>
-        <h3 class="text-2xl font-serif text-rose-800 mb-2">Wedding Day</h3>
-        <p class="text-lg text-gray-700">
+      <div class="bg-white rounded-lg shadow-lg p-8 border border-primary-100 max-w-md mx-auto">
+        <div class="text-primary-500 text-3xl mb-4">💍</div>
+        <h3 class="text-2xl font-serif text-primary-800 mb-2">Wedding Day</h3>
+        <p class="text-lg text-primary-700">
           {{ weddingDate | date:'fullDate' }}
         </p>
-        <p class="text-rose-600 mt-2">
+        <p class="text-primary-600 mt-2">
           {{ weddingDate | date:'shortTime' }} WITA
         </p>
       </div>
