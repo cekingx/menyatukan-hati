@@ -80,42 +80,161 @@
   --color-accent-950: #172554;
 }
 
-.theme-green {
-  --color-primary-50: #f0fdf4;
-  --color-primary-100: #dcfce7;
-  --color-primary-200: #bbf7d0;
-  --color-primary-300: #86efac;
-  --color-primary-400: #4ade80;
-  --color-primary-500: #22c55e;
-  --color-primary-600: #16a34a;
-  --color-primary-700: #15803d;
-  --color-primary-800: #166534;
-  --color-primary-900: #14532d;
-  --color-primary-950: #052e16;
 
-  --color-secondary-50: #f0fdf4;
-  --color-secondary-100: #dcfce7;
-  --color-secondary-200: #bbf7d0;
-  --color-secondary-300: #86efac;
-  --color-secondary-400: #4ade80;
-  --color-secondary-500: #22c55e;
-  --color-secondary-600: #16a34a;
-  --color-secondary-700: #15803d;
-  --color-secondary-800: #166534;
-  --color-secondary-900: #14532d;
-  --color-secondary-950: #052e16;
+.theme-sage {
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+  --color-primary-950: #022c22;
 
-  --color-accent-50: #f0fdf4;
-  --color-accent-100: #dcfce7;
-  --color-accent-200: #bbf7d0;
-  --color-accent-300: #86efac;
-  --color-accent-400: #4ade80;
-  --color-accent-500: #22c55e;
-  --color-accent-600: #16a34a;
-  --color-accent-700: #15803d;
-  --color-accent-800: #166534;
-  --color-accent-900: #14532d;
-  --color-accent-950: #052e16;
+  --color-secondary-50: #ecfdf5;
+  --color-secondary-100: #d1fae5;
+  --color-secondary-200: #a7f3d0;
+  --color-secondary-300: #6ee7b7;
+  --color-secondary-400: #34d399;
+  --color-secondary-500: #10b981;
+  --color-secondary-600: #059669;
+  --color-secondary-700: #047857;
+  --color-secondary-800: #065f46;
+  --color-secondary-900: #064e3b;
+  --color-secondary-950: #022c22;
+
+  --color-accent-50: #fefce8;
+  --color-accent-100: #fef9c3;
+  --color-accent-200: #fef08a;
+  --color-accent-300: #fde047;
+  --color-accent-400: #facc15;
+  --color-accent-500: #eab308;
+  --color-accent-600: #ca8a04;
+  --color-accent-700: #a16207;
+  --color-accent-800: #854d0e;
+  --color-accent-900: #713f12;
+  --color-accent-950: #422006;
+
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.theme-sage ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.theme-sage ::-webkit-scrollbar-thumb {
+  background: var(--color-primary-600);
+}
+
+.theme-sage ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-700);
+}
+
+.theme-navy {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  --color-secondary-50: #eff6ff;
+  --color-secondary-100: #dbeafe;
+  --color-secondary-200: #bfdbfe;
+  --color-secondary-300: #93c5fd;
+  --color-secondary-400: #60a5fa;
+  --color-secondary-500: #3b82f6;
+  --color-secondary-600: #2563eb;
+  --color-secondary-700: #1d4ed8;
+  --color-secondary-800: #1e40af;
+  --color-secondary-900: #1e3a8a;
+  --color-secondary-950: #172554;
+
+  --color-accent-50: #fefce8;
+  --color-accent-100: #fef9c3;
+  --color-accent-200: #fef08a;
+  --color-accent-300: #fde047;
+  --color-accent-400: #facc15;
+  --color-accent-500: #eab308;
+  --color-accent-600: #ca8a04;
+  --color-accent-700: #a16207;
+  --color-accent-800: #854d0e;
+  --color-accent-900: #713f12;
+  --color-accent-950: #422006;
+
+  background-color: #172554;
+  color: #eff6ff;
+}
+
+.theme-navy ::-webkit-scrollbar-track {
+  background: #1e40af;
+}
+
+.theme-navy ::-webkit-scrollbar-thumb {
+  background: var(--color-primary-600);
+}
+
+.theme-navy ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-700);
+}
+
+.theme-warm {
+  --color-primary-50: #fdf9f7;
+  --color-primary-100: #fbf2ee;
+  --color-primary-200: #f7e5dd;
+  --color-primary-300: #f1d3c3;
+  --color-primary-400: #e8b89e;
+  --color-primary-500: #d6a184;
+  --color-primary-600: #c28968;
+  --color-primary-700: #aa767c;
+  --color-primary-800: #8f6168;
+  --color-primary-900: #63474d;
+  --color-primary-950: #4a363b;
+
+  --color-secondary-50: #fff8f4;
+  --color-secondary-100: #fef1e8;
+  --color-secondary-200: #fce3d2;
+  --color-secondary-300: #f9cfb0;
+  --color-secondary-400: #f5b288;
+  --color-secondary-500: #ffa686;
+  --color-secondary-600: #ff9670;
+  --color-secondary-700: #f7845a;
+  --color-secondary-800: #e9714a;
+  --color-secondary-900: #d65d3f;
+  --color-secondary-950: #b8472e;
+
+  --color-accent-50: #fffcf9;
+  --color-accent-100: #fef9f2;
+  --color-accent-200: #fef2e4;
+  --color-accent-300: #fde8cc;
+  --color-accent-400: #fbd7a8;
+  --color-accent-500: #fec196;
+  --color-accent-600: #fcab7e;
+  --color-accent-700: #f99266;
+  --color-accent-800: #f5794f;
+  --color-accent-900: #e85d3a;
+  --color-accent-950: #c7452a;
+}
+
+.theme-warm ::-webkit-scrollbar-track {
+  background: #f1d3c3;
+}
+
+.theme-warm ::-webkit-scrollbar-thumb {
+  background: var(--color-primary-700);
+}
+
+.theme-warm ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-800);
 }
 
 /* Custom wedding invitation styles */
