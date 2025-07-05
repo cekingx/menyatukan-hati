@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import "tailwindcss";
 
 /* TailwindCSS v4.0 Theme Definitions */
@@ -334,13 +336,23 @@ html {
 }
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Montserrat', 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
 }
 
 /* Custom serif font for headings */
 .font-serif {
   font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Custom Montserrat font utility */
+.font-montserrat {
+  font-family: 'Montserrat', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Custom Dancing Script font utility */
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Smooth transitions for hover effects */
