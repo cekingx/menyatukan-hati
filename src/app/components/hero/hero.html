@@ -1,34 +1,33 @@
-<section class="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center px-4" style="background-image: url('/assets/images/hero.jpg')">
-  <div class="text-center max-w-4xl mx-auto">
+<section class="h-screen bg-cover bg-center bg-no-repeat flex items-end md:items-center justify-center md:justify-center px-4" style="background-image: url('/assets/images/hero2.jpg')">
+  <div class="text-left md:text-center w-full md:max-w-4xl mx-auto pb-20 md:pb-0">
     <div class="mb-8">
-      <h1 class="text-4xl md:text-7xl font-sans font-black text-white mb-4 tracking-wide drop-shadow-lg">
+      <h1 class="hidden md:block text-4xl md:text-7xl font-sans font-black text-white mb-4 tracking-wide drop-shadow-lg">
         Menyatukan Hati
       </h1>
-      <div class="w-32 h-0.5 bg-white mx-auto mb-8 drop-shadow-md"></div>
-      <p class="text-xl md:text-2xl text-white font-dancing mb-8 drop-shadow-md">
+      <div class="hidden md:block w-32 h-0.5 bg-white mx-auto mb-8 drop-shadow-md"></div>
+      <p class="hidden md:block text-xl md:text-2xl text-white font-dancing mb-8 drop-shadow-md">
         The Wedding Celebration of
       </p>
-      <div class="space-y-4">
-        <h2 class="text-5xl md:text-6xl font-sans font-black text-white drop-shadow-lg">
-          {{groomShortName}}
-        </h2>
-        <div class="text-3xl md:text-4xl text-white font-sans font-bold drop-shadow-md">&</div>
-        <h2 class="text-5xl md:text-6xl font-sans font-black text-white drop-shadow-lg">
-          {{brideShortName}}
+      <div class="space-y-2 md:space-y-4">
+        <h2 class="text-2xl md:text-6xl font-sans font-black text-white drop-shadow-lg">
+          {{groomShortName}} & {{brideShortName}}
         </h2>
       </div>
     </div>
     
-    <div class="mb-8" *ngIf="guestName">
-      <p class="text-lg md:text-xl text-white font-medium italic drop-shadow-md">
-        Dear {{guestName}}
+    <div class="mb-6 md:mb-8" *ngIf="guestName">
+      <p class="text-sm md:text-xl text-white font-medium italic drop-shadow-md">
+        Kepada Bpk/Ibu/Saudara/I
       </p>
-      <p class="text-large md:text-2xl text-white font-dancing mt-2 drop-shadow-lg">
+      <p class="text-sm md:text-xl text-white font-medium italic drop-shadow-md">
+        {{guestName}}
+      </p>
+      <p class="hidden md:block text-large md:text-2xl text-white font-dancing mt-2 drop-shadow-lg">
         You are cordially invited to our wedding celebration
       </p>
     </div>
     
-    <button (click)="scrollToNextSection()" class="bg-primary-100 hover:bg-primary-300 text-white px-8 py-4 rounded-full text-md md:text-xl font-medium transition-all duration-300 transform hover:scale-105 drop-shadow-lg">
+    <button (click)="scrollToNextSection()" class="bg-primary-100 hover:bg-primary-300 text-white px-6 py-3 md:px-8 md:py-4 text-sm md:text-xl font-medium transition-all duration-300 transform hover:scale-105 drop-shadow-lg">
       Open Invitation
     </button>
   </div>
