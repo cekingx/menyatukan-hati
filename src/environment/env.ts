@@ -15,27 +15,27 @@ export const Env = {
       photo: '/assets/images/metatah/1.jpg'
     },
     {
-      name: 'Anak Agung Gede Oka Suryawan',
+      name: 'Anak Agung Gde Agung Panca Semaraputra',
       photo: '/assets/images/metatah/2.jpg'
     },
     {
-      name: 'Anak Agung Gede Wisnawa',
+      name: 'Anak Agung Gede Oka Suryawan',
       photo: '/assets/images/metatah/3.jpg'
     },
     {
-      name: 'Anak Agung Gde Artha Yoga',
+      name: 'Anak Agung Gede Wisnawa',
       photo: '/assets/images/metatah/4.jpg'
     },
     {
-      name: 'Anak Agung Gde Agung Panca Semaraputra',
+      name: 'Anak Agung Gede Darma Kusuma',
       photo: '/assets/images/metatah/5.jpg'
     },
     {
-      name: 'Anak Agung Gde Aditya Dwiputra',
+      name: 'Anak Agung Gde Artha Yoga',
       photo: '/assets/images/metatah/6.jpg'
     },
     {
-      name: 'Anak Agung Gede Darma Kusuma',
+      name: 'Anak Agung Gde Aditya Dwiputra',
       photo: '/assets/images/metatah/7.jpg'
     },
     {
