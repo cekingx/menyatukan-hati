@@ -1,0 +1,18 @@
+<section class="py-20 bg-surface" id="metatah-gallery">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-sans font-black text-primary-900 mb-4">
+        Metatah Gallery
+      </h2>
+      <div class="w-24 h-0.5 bg-primary-900 mx-auto"></div>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      @for (photo of photos; track photo) {
+        <div class="aspect-square overflow-hidden rounded-lg bg-primary-100">
+          <img [src]="'/assets/images/metatah/' + photo" [alt]="'Metatah gallery photo'" class="w-full h-full object-cover">
+        </div>
+      }
+    </div>
+  </div>
+</section>

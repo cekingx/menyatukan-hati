@@ -6,6 +6,7 @@ import { Metatah } from './components/metatah/metatah';
 import { VedicPrayer } from './components/vedic-prayer/vedic-prayer';
 import { WeddingDetails } from './components/wedding-details/wedding-details';
 import { PhotoGallery } from './components/photo-gallery/photo-gallery';
+import { MetatahGallery } from './components/metatah-gallery/metatah-gallery';
 import { Footer } from './components/footer/footer';
 import { ThemeService } from './services/theme.service';
 
@@ -19,6 +20,7 @@ import { ThemeService } from './services/theme.service';
     VedicPrayer,
     WeddingDetails,
     PhotoGallery,
+    MetatahGallery,
     Footer
   ],
   templateUrl: './app.html',

@@ -58,7 +58,8 @@ Transform "menyatukan-hati" into a modern, responsive online wedding invitation 
 4. Section that contain prayer in veda
 5. Section that contain date, time, venue, and countdown
 6. Section for photos
-7. Footer that say 'Matur Suksma' and 'made with love by cekingx'
+7. Section for metatah gallery photos (4 columns desktop, 2 columns mobile)
+8. Footer that say 'Matur Suksma' and 'made with love by cekingx'
 
 ## Technical Stack
 
