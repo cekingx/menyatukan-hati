@@ -1,0 +1,86 @@
+<section class="py-20 bg-surface" id="metatah-gallery">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-sans font-black text-primary-900 mb-4">
+        Metatah Gallery
+      </h2>
+      <div class="w-24 h-0.5 bg-primary-900 mx-auto"></div>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      @for (photo of photos; track photo; let i = $index) {
+        <div class="aspect-square overflow-hidden rounded-lg bg-primary-100 cursor-pointer group relative hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+             (click)="openLightbox(photo, i)">
+          <img [src]="'/assets/images/metatah/' + photo" [alt]="'Metatah gallery photo'" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+          
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-transparent group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+            <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zM12 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1V4zM12 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-3z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Caption -->
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+            <p class="text-white text-sm font-medium opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              <!-- Metatah -->
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div
+    *ngIf="isLightboxOpen"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 backdrop-blur-sm"
+    (click)="closeLightbox()"
+  >
+    <div class="relative max-w-4xl max-h-full mx-4" (click)="$event.stopPropagation()">
+      <!-- Close Button -->
+      <button
+        class="absolute top-4 right-4 z-10 text-white hover:text-primary-300 transition-colors duration-200"
+        (click)="closeLightbox()"
+        aria-label="Close gallery"
+      >
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Buttons -->
+      <button
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-primary-300 transition-colors duration-200"
+        (click)="previousImage()"
+        aria-label="Previous image"
+      >
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+
+      <button
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-primary-300 transition-colors duration-200"
+        (click)="nextImage()"
+        aria-label="Next image"
+      >
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+
+      <!-- Main Image -->
+      <div class="bg-modal rounded-lg overflow-hidden shadow-2xl">
+        <img
+          *ngIf="selectedPhoto"
+          [src]="'/assets/images/metatah/' + selectedPhoto"
+          [alt]="'Metatah gallery photo'"
+          class="w-full h-auto max-h-[80vh] object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
