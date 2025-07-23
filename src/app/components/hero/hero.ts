@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Env } from '../../../environment/env';
 import { AudioService } from '../../services/audio.service';
+import { AssetService } from '../../services/asset.service';
 
 @Component({
   selector: 'app-hero',
@@ -15,16 +16,20 @@ export class Hero implements OnInit {
   brideShortName = Env.brideShortName;
   guestName: string = 'Guest';
   isMusicPlaying = false;
+  heroBackgroundImage!: string;
 
-  constructor(private route: ActivatedRoute, private audioService: AudioService) {}
+  constructor(private route: ActivatedRoute, private audioService: AudioService, private assetService: AssetService) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.guestName = params['guest'] ?? 'Guest';
     });
 
+    // Initialize asset URLs
+    this.heroBackgroundImage = this.assetService.getImageUrl('/images/hero2.jpg');
+
     // Initialize audio service with the music file
-    this.audioService.initAudio('/assets/music/morning-hapiness.mp3');
+    this.audioService.initAudio(this.assetService.getAudioUrl('/music/lets-fall-in-love.mp3'));
   }
 
   scrollToNextSection() {

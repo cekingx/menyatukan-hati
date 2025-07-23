@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Env } from '../../../environment/env';
+import { AssetService } from '../../services/asset.service';
 
 @Component({
   selector: 'app-metatah-gallery',
@@ -13,6 +14,12 @@ export class MetatahGallery implements OnInit, OnDestroy {
   selectedPhoto: string | null = null;
   isLightboxOpen = false;
   currentPhotoIndex = 0;
+
+  constructor(private assetService: AssetService) {}
+
+  getImageUrl(path: string): string {
+    return this.assetService.getImageUrl(path);
+  }
 
   ngOnInit(): void {
     document.addEventListener('keydown', this.handleKeyDown.bind(this));

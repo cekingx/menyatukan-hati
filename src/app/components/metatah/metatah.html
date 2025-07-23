@@ -17,7 +17,7 @@
       @for (participant of participants; track participant.name) {
         <div class="text-center">
           <div class="w-48 h-48 bg-primary-100 rounded-full mx-auto mb-6 overflow-hidden">
-            <img [src]="participant.photo" [alt]="participant.name" class="w-full h-full object-cover">
+            <img [src]="getImageUrl(participant.photo)" [alt]="participant.name" class="w-full h-full object-cover">
           </div>
           <h3 class="text-lg font-sans text-primary-900 mb-3">
             {{participant.name}}

@@ -9,48 +9,54 @@ export const Env = {
   brideFatherName: 'Made Alit Arjana',
   brideMotherName: 'Ni Luh Putu Asmariani',
   brideFamName: 'Keluarga Made Alit Arjana',
+  assetUrl: "https://storage.googleapis.com/menyatukan-hati-dev/wahyu-mitha",
   metatahParticipants: [
     {
       name: 'Anak Agung Gde Agung Adhiaksa Pratama',
-      photo: '/assets/images/metatah/1.jpg'
+      photo: '/images/metatah/1.jpg'
     },
     {
       name: 'Anak Agung Gde Agung Panca Semaraputra',
-      photo: '/assets/images/metatah/2.jpg'
+      photo: '/images/metatah/2.jpg'
     },
     {
       name: 'Anak Agung Gede Oka Suryawan',
-      photo: '/assets/images/metatah/3.jpg'
+      photo: '/images/metatah/3.jpg'
     },
     {
       name: 'Anak Agung Gede Wisnawa',
-      photo: '/assets/images/metatah/4.jpg'
+      photo: '/images/metatah/4.jpg'
     },
     {
       name: 'Anak Agung Gede Darma Kusuma',
-      photo: '/assets/images/metatah/5.jpg'
+      photo: '/images/metatah/5.jpg'
     },
     {
       name: 'Anak Agung Gde Artha Yoga',
-      photo: '/assets/images/metatah/6.jpg'
+      photo: '/images/metatah/6.jpg'
     },
     {
       name: 'Anak Agung Gde Aditya Dwiputra',
-      photo: '/assets/images/metatah/7.jpg'
+      photo: '/images/metatah/7.jpg'
     },
     {
       name: 'Anak Agung Gede Pastina',
-      photo: '/assets/images/metatah/8.jpg'
+      photo: '/images/metatah/8.jpg'
     },
   ],
   metatahGalleryPhotos: [
-    '1.jpg',
-    '2.jpg',
-    '3.jpg',
-    '4.jpg',
-    '5.jpg',
-    '6.jpg',
-    '7.jpg',
-    '8.jpg'
+    '/images/metatah-gallery/1.jpg',
+    '/images/metatah-gallery/2.jpg',
+    '/images/metatah-gallery/3.jpg',
+    '/images/metatah-gallery/4.jpg',
+    '/images/metatah-gallery/5.jpg',
+    '/images/metatah-gallery/6.jpg',
+    '/images/metatah-gallery/7.jpg',
+    '/images/metatah-gallery/8.jpg',
+    '/images/metatah-gallery/9.jpg',
+    '/images/metatah-gallery/10.jpg',
+    '/images/metatah-gallery/11.jpg',
+    '/images/metatah-gallery/12.jpg',
+    '/images/metatah-gallery/13.jpg'
   ]
 }
