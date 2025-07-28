@@ -57,6 +57,7 @@ export const Env = {
     '/images/metatah-gallery/10.jpg',
     '/images/metatah-gallery/11.jpg',
     '/images/metatah-gallery/12.jpg',
-    '/images/metatah-gallery/13.jpg'
+    '/images/metatah-gallery/13.jpg',
+    '/images/metatah-gallery/14.jpg'
   ]
 }
