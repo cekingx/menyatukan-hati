@@ -61,36 +61,36 @@ export class PhotoGallery implements OnInit {
         alt: 'Wedding Photo 6',
         caption: 'Eternal bond'
       },
-      {
-        id: '7',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0665.jpg'),
-        alt: 'Wedding Photo 7',
-        caption: 'Wedding celebration'
-      },
-      {
-        id: '8',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0670.jpg'),
-        alt: 'Wedding Photo 8',
-        caption: 'Loving moments'
-      },
-      {
-        id: '9',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0674.jpg'),
-        alt: 'Wedding Photo 9',
-        caption: 'Divine ceremony'
-      },
-      {
-        id: '10',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0688.jpg'),
-        alt: 'Wedding Photo 10',
-        caption: 'Sacred rituals'
-      },
-      {
-        id: '11',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0693.jpg'),
-        alt: 'Wedding Photo 11',
-        caption: 'Blessed union'
-      },
+      // {
+      //   id: '7',
+      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0665.jpg'),
+      //   alt: 'Wedding Photo 7',
+      //   caption: 'Wedding celebration'
+      // },
+      // {
+      //   id: '8',
+      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0670.jpg'),
+      //   alt: 'Wedding Photo 8',
+      //   caption: 'Loving moments'
+      // },
+      // {
+      //   id: '9',
+      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0674.jpg'),
+      //   alt: 'Wedding Photo 9',
+      //   caption: 'Divine ceremony'
+      // },
+      // {
+      //   id: '10',
+      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0688.jpg'),
+      //   alt: 'Wedding Photo 10',
+      //   caption: 'Sacred rituals'
+      // },
+      // {
+      //   id: '11',
+      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0693.jpg'),
+      //   alt: 'Wedding Photo 11',
+      //   caption: 'Blessed union'
+      // },
       {
         id: '12',
         src: this.assetService.getImageUrl('/images/gallery/DSC_0697.jpg'),
