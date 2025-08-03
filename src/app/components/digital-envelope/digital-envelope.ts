@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Env } from '../../../environment/env';
 
 @Component({
   selector: 'app-digital-envelope',
@@ -8,9 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './digital-envelope.css'
 })
 export class DigitalEnvelopeComponent {
-  bankName = 'BCA';
-  accountNumber = '4160591426';
-  accountName = 'Anak Agung Gde Wahyu Spa';
+  bankName = Env.bankAccount.bankName;
+  accountNumber = Env.bankAccount.accountNumber;
+  accountName = Env.bankAccount.accountName;
   copySuccess = false;
 
   async copyAccountNumber() {
