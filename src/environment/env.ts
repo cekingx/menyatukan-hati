@@ -60,6 +60,63 @@ export const Env = {
     '/images/metatah-gallery/13.jpg',
     '/images/metatah-gallery/14.jpg'
   ],
+  galleryImages: [
+    {
+      id: '1',
+      path: '/images/gallery/DSC_0626.jpg',
+      alt: 'Wedding Photo 1',
+    },
+    {
+      id: '2',
+      path: '/images/gallery/DSC_0561.jpg',
+      alt: 'Wedding Photo 2',
+    },
+    {
+      id: '3',
+      path: '/images/gallery/DSC_0632.jpg',
+      alt: 'Wedding Photo 3',
+    },
+    {
+      id: '4',
+      path: '/images/gallery/DSC_0640.jpg',
+      alt: 'Wedding Photo 4',
+    },
+    {
+      id: '5',
+      path: '/images/gallery/DSC_0643.jpg',
+      alt: 'Wedding Photo 5',
+    },
+    {
+      id: '6',
+      path: '/images/gallery/DSC_0650.jpg',
+      alt: 'Wedding Photo 6',
+    },
+    {
+      id: '7',
+      path: '/images/gallery/DSC_0697.jpg',
+      alt: 'Wedding Photo 7',
+    },
+    {
+      id: '8',
+      path: '/images/gallery/DSC_0716.jpg',
+      alt: 'Wedding Photo 8',
+    },
+    {
+      id: '9',
+      path: '/images/gallery/DSC_0817.jpg',
+      alt: 'Wedding Photo 9',
+    },
+    {
+      id: '10',
+      path: '/images/gallery/DSC_1013.jpg',
+      alt: 'Wedding Photo 10',
+    },
+    {
+      id: '11',
+      path: '/images/gallery/DSC_1026.jpg',
+      alt: 'Wedding Photo 11',
+    },
+  ],
   bankAccount: {
     bankName: 'BPD Bali',
     accountNumber: '0180202269770',
