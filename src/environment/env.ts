@@ -59,5 +59,10 @@ export const Env = {
     '/images/metatah-gallery/12.jpg',
     '/images/metatah-gallery/13.jpg',
     '/images/metatah-gallery/14.jpg'
-  ]
+  ],
+  bankAccount: {
+    bankName: 'BPD Bali',
+    accountNumber: '0180202269770',
+    accountName: 'Anak Agung Gde Wahyu Sparsayoga',
+  }
 }

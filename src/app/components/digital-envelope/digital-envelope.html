@@ -1,0 +1,58 @@
+<section class="py-20 bg-surface" id="digital-envelope">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-sans font-black text-primary-900 mb-4">Digital Envelope</h2>
+      <div class="w-24 h-0.5 bg-primary-900 mx-auto"></div>
+    </div>
+
+    <!-- Gift Card -->
+    <div class="max-w-md mx-auto">
+      <div class="bg-gradient-to-br from-primary-50 to-primary-50 rounded-lg p-8 border border-primary-100">
+        <div class="text-center">
+          <h3 class="text-2xl font-sans font-bold text-primary-900 mb-4">Gift Account</h3>
+          
+          <!-- Bank Information -->
+          <div class="space-y-4 text-primary-900">
+            <div class="text-center">
+              <div class="text-sm text-primary-700 mb-1">Bank</div>
+              <div class="font-medium text-lg">{{ bankName }}</div>
+            </div>
+            
+            <!-- Account Number -->
+            <div class="bg-card rounded-lg p-4 border border-primary-100 shadow-lg">
+              <div class="text-sm text-primary-700 mb-2">Account Number</div>
+              <div class="text-xl font-bold text-primary-900 tracking-wider font-mono mb-3">
+                {{ accountNumber }}
+              </div>
+              <button
+                (click)="copyAccountNumber()"
+                class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+                [class.bg-primary-800]="copySuccess"
+              >
+                {{ copySuccess ? 'Copied!' : 'Copy' }}
+              </button>
+            </div>
+            
+            <div class="text-center">
+              <div class="text-sm text-primary-700 mb-1">Account Name</div>
+              <div class="font-medium">{{ accountName }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Description -->
+    <div class="mt-12 text-center">
+      <div class="max-w-2xl mx-auto space-y-6">
+        <p class="text-sm text-primary-900 leading-relaxed italic">
+          Your presence is the greatest gift, but if you wish to honor us with a monetary blessing
+        </p>
+        
+        <p class="text-sm text-primary-900 leading-relaxed italic">
+          Thank you for your thoughtful gesture. Your blessings mean more to us than any gift.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

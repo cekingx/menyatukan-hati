@@ -15,6 +15,7 @@ Transform "menyatukan-hati" into a modern, responsive online wedding invitation 
 - As a guest, I want when open the website there are a call-to-action to 'Open the invitation'
 - As a guest, I want to see the couple's love story or timeline
 - As a guest, I want to view wedding photos/gallery
+- As a guest who cannot attend, I want to send a monetary gift through digital envelope with bank account information
 
 ### Epic 2: Configurable Theme System
 
@@ -59,7 +60,8 @@ Transform "menyatukan-hati" into a modern, responsive online wedding invitation 
 5. Section that contain date, time, venue, and countdown
 6. Section for photos
 7. Section for metatah gallery photos (4 columns desktop, 2 columns mobile)
-8. Footer that say 'Matur Suksma' and 'made with love by cekingx'
+8. Section for digital envelope with bank account details for monetary gifts
+9. Footer that say 'Matur Suksma' and 'made with love by cekingx'
 
 ## Technical Stack
 
