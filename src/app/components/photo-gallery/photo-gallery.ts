@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AssetService } from '../../services/asset.service';
+import { Env } from '../../../environment/env';
 
 interface GalleryImage {
   id: string;
@@ -24,80 +25,11 @@ export class PhotoGallery implements OnInit {
   isLightboxOpen = false;
 
   ngOnInit(): void {
-    this.images = [
-      {
-        id: '1',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0626.jpg'),
-        alt: 'Wedding Photo 1',
-        caption: 'Together in love'
-      },
-      {
-        id: '2',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0561.jpg'),
-        alt: 'Wedding Photo 2',
-        caption: 'Sacred ceremony moments'
-      },
-      {
-        id: '3',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0632.jpg'),
-        alt: 'Wedding Photo 3',
-        caption: 'Traditional blessings'
-      },
-      {
-        id: '4',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0640.jpg'),
-        alt: 'Wedding Photo 4',
-        caption: 'Family joy'
-      },
-      {
-        id: '5',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0643.jpg'),
-        alt: 'Wedding Photo 5',
-        caption: 'Sacred vows'
-      },
-      {
-        id: '6',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0650.jpg'),
-        alt: 'Wedding Photo 6',
-        caption: 'Eternal bond'
-      },
-      // {
-      //   id: '7',
-      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0665.jpg'),
-      //   alt: 'Wedding Photo 7',
-      //   caption: 'Wedding celebration'
-      // },
-      // {
-      //   id: '8',
-      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0670.jpg'),
-      //   alt: 'Wedding Photo 8',
-      //   caption: 'Loving moments'
-      // },
-      // {
-      //   id: '9',
-      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0674.jpg'),
-      //   alt: 'Wedding Photo 9',
-      //   caption: 'Divine ceremony'
-      // },
-      // {
-      //   id: '10',
-      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0688.jpg'),
-      //   alt: 'Wedding Photo 10',
-      //   caption: 'Sacred rituals'
-      // },
-      // {
-      //   id: '11',
-      //   src: this.assetService.getImageUrl('/images/gallery/DSC_0693.jpg'),
-      //   alt: 'Wedding Photo 11',
-      //   caption: 'Blessed union'
-      // },
-      {
-        id: '12',
-        src: this.assetService.getImageUrl('/images/gallery/DSC_0697.jpg'),
-        alt: 'Wedding Photo 12',
-        caption: 'Wedding bliss'
-      }
-    ];
+    this.images = Env.galleryImages.map(image => ({
+      id: image.id,
+      src: this.assetService.getImageUrl(image.path),
+      alt: image.alt,
+    }));
     
     document.addEventListener('keydown', this.handleKeyDown.bind(this));
   }
