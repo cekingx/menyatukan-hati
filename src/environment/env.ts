@@ -45,20 +45,12 @@ export const Env = {
     },
   ],
   metatahGalleryPhotos: [
-    // '/images/metatah-gallery/1.jpg',
-    // '/images/metatah-gallery/2.jpg',
-    // '/images/metatah-gallery/3.jpg',
-    // '/images/metatah-gallery/4.jpg',
-    // '/images/metatah-gallery/5.jpg',
-    // '/images/metatah-gallery/6.jpg',
-    // '/images/metatah-gallery/7.jpg',
-    // '/images/metatah-gallery/8.jpg',
-    '/images/metatah-gallery/9.jpg',
-    '/images/metatah-gallery/10.jpg',
-    '/images/metatah-gallery/11.jpg',
-    '/images/metatah-gallery/12.jpg',
-    '/images/metatah-gallery/13.jpg',
-    '/images/metatah-gallery/14.jpg'
+    '/images/metatah-gallery/15.jpg',
+    '/images/metatah-gallery/16.jpg',
+    '/images/metatah-gallery/17.jpg',
+    '/images/metatah-gallery/18.jpg',
+    '/images/metatah-gallery/19.jpg',
+    '/images/metatah-gallery/20.jpg',
   ],
   galleryImages: [
     {
