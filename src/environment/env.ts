@@ -104,9 +104,14 @@ export const Env = {
       alt: 'Wedding Photo 10',
     },
   ],
-  bankAccount: {
+  bankAccountGroom: {
     bankName: 'BPD Bali',
     accountNumber: '0180202269770',
     accountName: 'Anak Agung Gde Wahyu Sparsayoga',
+  },
+  bankAccountBride: {
+    bankName: 'BCA',
+    accountNumber: '4160568653',
+    accountName: 'Putu Mitha Frianca Wulandewi'
   }
 }

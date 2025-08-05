@@ -9,14 +9,22 @@ import { Env } from '../../../environment/env';
   styleUrl: './digital-envelope.css'
 })
 export class DigitalEnvelopeComponent {
-  bankName = Env.bankAccount.bankName;
-  accountNumber = Env.bankAccount.accountNumber;
-  accountName = Env.bankAccount.accountName;
+  bankAccount = {
+    groom: Env.bankAccountGroom,
+    bride: Env.bankAccountBride
+  }
   copySuccess = false;
 
-  async copyAccountNumber() {
+  async copyAccountNumber(type: 'groom' | 'bride') {
+    let text = '';
+    if (type == 'groom') {
+      text = this.bankAccount.groom.accountNumber
+    } else {
+      text = this.bankAccount.bride.accountNumber
+    }
+
     try {
-      await navigator.clipboard.writeText(this.accountNumber);
+      await navigator.clipboard.writeText(text);
       this.copySuccess = true;
       setTimeout(() => {
         this.copySuccess = false;
@@ -24,14 +32,14 @@ export class DigitalEnvelopeComponent {
     } catch (err) {
       console.error('Failed to copy: ', err);
       // Fallback for older browsers
-      this.fallbackCopyTextToClipboard(this.accountNumber);
+      this.fallbackCopyTextToClipboard(text);
     }
   }
 
   fallbackCopyTextToClipboard(text: string) {
     const textArea = document.createElement('textarea');
     textArea.value = text;
-    
+
     // Avoid scrolling to bottom
     textArea.style.top = '0';
     textArea.style.left = '0';
