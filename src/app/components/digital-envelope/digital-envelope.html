@@ -27,9 +27,9 @@
               <button
                 (click)="copyAccountNumber('groom')"
                 class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-                [class.bg-primary-800]="copySuccess"
+                [class.bg-primary-800]="copySuccess.groom"
               >
-                {{ copySuccess ? 'Copied!' : 'Copy' }}
+                {{ copySuccess.groom ? 'Copied!' : 'Copy' }}
               </button>
             </div>
 
@@ -68,9 +68,9 @@
               <button
                 (click)="copyAccountNumber('bride')"
                 class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-                [class.bg-primary-800]="copySuccess"
+                [class.bg-primary-800]="copySuccess.bride"
               >
-                {{ copySuccess ? 'Copied!' : 'Copy' }}
+                {{ copySuccess.bride ? 'Copied!' : 'Copy' }}
               </button>
             </div>
 

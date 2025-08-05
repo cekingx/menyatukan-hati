@@ -13,7 +13,10 @@ export class DigitalEnvelopeComponent {
     groom: Env.bankAccountGroom,
     bride: Env.bankAccountBride
   }
-  copySuccess = false;
+  copySuccess = {
+    groom: false,
+    bride: false
+  };
 
   async copyAccountNumber(type: 'groom' | 'bride') {
     let text = '';
@@ -25,18 +28,18 @@ export class DigitalEnvelopeComponent {
 
     try {
       await navigator.clipboard.writeText(text);
-      this.copySuccess = true;
+      this.copySuccess[type] = true;
       setTimeout(() => {
-        this.copySuccess = false;
+        this.copySuccess[type] = false;
       }, 2000);
     } catch (err) {
       console.error('Failed to copy: ', err);
       // Fallback for older browsers
-      this.fallbackCopyTextToClipboard(text);
+      this.fallbackCopyTextToClipboard(text, type);
     }
   }
 
-  fallbackCopyTextToClipboard(text: string) {
+  fallbackCopyTextToClipboard(text: string, type?: 'groom' | 'bride') {
     const textArea = document.createElement('textarea');
     textArea.value = text;
 
@@ -51,10 +54,10 @@ export class DigitalEnvelopeComponent {
 
     try {
       const successful = document.execCommand('copy');
-      if (successful) {
-        this.copySuccess = true;
+      if (successful && type) {
+        this.copySuccess[type] = true;
         setTimeout(() => {
-          this.copySuccess = false;
+          this.copySuccess[type] = false;
         }, 2000);
       }
     } catch (err) {
