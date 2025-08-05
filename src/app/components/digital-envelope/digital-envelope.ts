@@ -9,29 +9,40 @@ import { Env } from '../../../environment/env';
   styleUrl: './digital-envelope.css'
 })
 export class DigitalEnvelopeComponent {
-  bankName = Env.bankAccount.bankName;
-  accountNumber = Env.bankAccount.accountNumber;
-  accountName = Env.bankAccount.accountName;
-  copySuccess = false;
+  bankAccount = {
+    groom: Env.bankAccountGroom,
+    bride: Env.bankAccountBride
+  }
+  copySuccess = {
+    groom: false,
+    bride: false
+  };
 
-  async copyAccountNumber() {
+  async copyAccountNumber(type: 'groom' | 'bride') {
+    let text = '';
+    if (type == 'groom') {
+      text = this.bankAccount.groom.accountNumber
+    } else {
+      text = this.bankAccount.bride.accountNumber
+    }
+
     try {
-      await navigator.clipboard.writeText(this.accountNumber);
-      this.copySuccess = true;
+      await navigator.clipboard.writeText(text);
+      this.copySuccess[type] = true;
       setTimeout(() => {
-        this.copySuccess = false;
+        this.copySuccess[type] = false;
       }, 2000);
     } catch (err) {
       console.error('Failed to copy: ', err);
       // Fallback for older browsers
-      this.fallbackCopyTextToClipboard(this.accountNumber);
+      this.fallbackCopyTextToClipboard(text, type);
     }
   }
 
-  fallbackCopyTextToClipboard(text: string) {
+  fallbackCopyTextToClipboard(text: string, type?: 'groom' | 'bride') {
     const textArea = document.createElement('textarea');
     textArea.value = text;
-    
+
     // Avoid scrolling to bottom
     textArea.style.top = '0';
     textArea.style.left = '0';
@@ -43,10 +54,10 @@ export class DigitalEnvelopeComponent {
 
     try {
       const successful = document.execCommand('copy');
-      if (successful) {
-        this.copySuccess = true;
+      if (successful && type) {
+        this.copySuccess[type] = true;
         setTimeout(() => {
-          this.copySuccess = false;
+          this.copySuccess[type] = false;
         }, 2000);
       }
     } catch (err) {

@@ -5,50 +5,91 @@
       <div class="w-24 h-0.5 bg-primary-900 mx-auto"></div>
     </div>
 
-    <!-- Gift Card -->
+    <!-- Gift Card Groom -->
     <div class="max-w-md mx-auto">
       <div class="bg-gradient-to-br from-primary-50 to-primary-50 rounded-lg p-8 border border-primary-100">
         <div class="text-center">
           <h3 class="text-2xl font-sans font-bold text-primary-900 mb-4">Gift Account</h3>
-          
+
           <!-- Bank Information -->
           <div class="space-y-4 text-primary-900">
             <div class="text-center">
               <div class="text-sm text-primary-700 mb-1">Bank</div>
-              <div class="font-medium text-lg">{{ bankName }}</div>
+              <div class="font-medium text-lg">{{ bankAccount.groom.bankName }}</div>
             </div>
-            
+
             <!-- Account Number -->
             <div class="bg-card rounded-lg p-4 border border-primary-100 shadow-lg">
               <div class="text-sm text-primary-700 mb-2">Account Number</div>
               <div class="text-xl font-bold text-primary-900 tracking-wider font-mono mb-3">
-                {{ accountNumber }}
+                {{ bankAccount.groom.accountNumber }}
               </div>
               <button
-                (click)="copyAccountNumber()"
+                (click)="copyAccountNumber('groom')"
                 class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-                [class.bg-primary-800]="copySuccess"
+                [class.bg-primary-800]="copySuccess.groom"
               >
-                {{ copySuccess ? 'Copied!' : 'Copy' }}
+                {{ copySuccess.groom ? 'Copied!' : 'Copy' }}
               </button>
             </div>
-            
+
             <div class="text-center">
               <div class="text-sm text-primary-700 mb-1">Account Name</div>
-              <div class="font-medium">{{ accountName }}</div>
+              <div class="font-medium">{{ bankAccount.groom.accountName }}</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <div class="my-4 text-center">
+      <p>Or</p>
+    </div>
+
+    <!-- Gift Card Bride -->
+    <div class="max-w-md mx-auto">
+      <div class="bg-gradient-to-br from-primary-50 to-primary-50 rounded-lg p-8 border border-primary-100">
+        <div class="text-center">
+          <h3 class="text-2xl font-sans font-bold text-primary-900 mb-4">Gift Account</h3>
+
+          <!-- Bank Information -->
+          <div class="space-y-4 text-primary-900">
+            <div class="text-center">
+              <div class="text-sm text-primary-700 mb-1">Bank</div>
+              <div class="font-medium text-lg">{{ bankAccount.bride.bankName }}</div>
+            </div>
+
+            <!-- Account Number -->
+            <div class="bg-card rounded-lg p-4 border border-primary-100 shadow-lg">
+              <div class="text-sm text-primary-700 mb-2">Account Number</div>
+              <div class="text-xl font-bold text-primary-900 tracking-wider font-mono mb-3">
+                {{ bankAccount.bride.accountNumber }}
+              </div>
+              <button
+                (click)="copyAccountNumber('bride')"
+                class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+                [class.bg-primary-800]="copySuccess.bride"
+              >
+                {{ copySuccess.bride ? 'Copied!' : 'Copy' }}
+              </button>
+            </div>
+
+            <div class="text-center">
+              <div class="text-sm text-primary-700 mb-1">Account Name</div>
+              <div class="font-medium">{{ bankAccount.bride.accountName }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Description -->
     <div class="mt-12 text-center">
       <div class="max-w-2xl mx-auto space-y-6">
         <p class="text-sm text-primary-900 leading-relaxed italic">
           Your presence is the greatest gift, but if you wish to honor us with a monetary blessing
         </p>
-        
+
         <p class="text-sm text-primary-900 leading-relaxed italic">
           Thank you for your thoughtful gesture. Your blessings mean more to us than any gift.
         </p>
