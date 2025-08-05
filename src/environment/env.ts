@@ -85,28 +85,23 @@ export const Env = {
     },
     {
       id: '7',
-      path: '/images/gallery/DSC_0697.jpg',
+      path: '/images/gallery/DSC_0716.jpg',
       alt: 'Wedding Photo 7',
     },
     {
       id: '8',
-      path: '/images/gallery/DSC_0716.jpg',
+      path: '/images/gallery/DSC_0817.jpg',
       alt: 'Wedding Photo 8',
     },
     {
       id: '9',
-      path: '/images/gallery/DSC_0817.jpg',
+      path: '/images/gallery/DSC_1013.jpg',
       alt: 'Wedding Photo 9',
     },
     {
       id: '10',
-      path: '/images/gallery/DSC_1013.jpg',
-      alt: 'Wedding Photo 10',
-    },
-    {
-      id: '11',
       path: '/images/gallery/DSC_1026.jpg',
-      alt: 'Wedding Photo 11',
+      alt: 'Wedding Photo 10',
     },
   ],
   bankAccount: {
